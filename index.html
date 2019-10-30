@@ -21,7 +21,27 @@
             </section>
         </header>
         <section class="center-image">
-            <img src="images/guatape.jpg" alt="Foto de la represa de Guatapé.">
+            <picture>
+                <source media="(min-width: 900px)" srcset="images/guatape.jpg">
+                <source media="(min-width: 320px)" srcset="images/guatape-320.jpeg">
+                <img src="images/guatape.jpg" alt="Foto de la represa de Guatapé.">
+            </picture>
+        </section>
+        <section class="two-images">
+            <div class="img-izq"></div>
+                <picture>
+                    <source media="(min-width: 900px)" srcset="images/medellin-metro.jpg">
+                    <source media="(min-width: 320px)" srcset="images/medellin-metro.jpg">
+                    <img src="images/medellin-metro.jpg" alt="Foto de Medellín y el Metro de la ciudad.">
+                </picture>
+            </div>
+            <div class="img-der">
+                <picture>
+                    <source media="(min-width: 900px)" srcset="images/medellin-noche.jpeg">
+                    <source media="(min-width: 320px)" srcset="images/medellin-noche.jpeg">
+                    <img src="images/medellin-noche.jpeg" alt="Foto de Medellín en la noche">
+                </picture>
+            </div>
         </section>
         <footer></footer>
     </div>

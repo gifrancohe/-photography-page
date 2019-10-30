@@ -39,19 +39,30 @@ header section.links {
     background-color: #82c3a6;
 }
 
-.center-image img {
+.center-image picture {
     width: 100%;
     padding: 15px;
 }
 
-@media only screen and (min-width: 900px) {
-    .contenido {
-        width: 900px;
-    }
+.center-image img {
+    width: 100%;
+}
+
+img {
+    box-shadow: 2px 2px 2px #02010a;
+    -webkit-box-shadow: 2px 2px 2px #02010a;
+    -moz-box-shadow: 2px 2px 2px #02010a;
+      
 }
 
 @media only screen and (min-width: 320px) {
     .contenido {
         width: 100%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .contenido {
+        width: 900px;
     }
 }

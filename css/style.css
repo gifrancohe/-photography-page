@@ -52,17 +52,54 @@ img {
     box-shadow: 2px 2px 2px #02010a;
     -webkit-box-shadow: 2px 2px 2px #02010a;
     -moz-box-shadow: 2px 2px 2px #02010a;
-      
+}
+
+.two-images {
+    background-color: #d5c75f;
+    border: 1px solid
+}
+
+.two-images div {
+    flex: 1;
+    padding: 25px;
+}
+
+.two-images div img {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+}
+
+img#img-izq:hover {
+    transform: rotate(10deg);
+    box-shadow: 2px 2px 2px #82c3a6;
+}
+
+img#img-der:hover {
+    transform: translate(20px, -5px);
+    box-shadow: 2px 2px 2px #82c3a6;
 }
 
 @media only screen and (min-width: 320px) {
     .contenido {
         width: 100%;
     }
+
+    .two-images {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 @media only screen and (min-width: 900px) {
     .contenido {
         width: 900px;
+    }
+
+    .two-images {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 }

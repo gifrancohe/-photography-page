@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Comenzando con la fotografía</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/88986282ed.js" crossorigin="anonymous"></script>
 </head>
@@ -13,41 +13,50 @@
     <div class="contenido">
         <header>
             <section class="title">
-                <h1>Comenzando con la fotografía</h1>
+                <h1>Comenzando con los paisajes</h1>
             </section>
             <section class="links">
-                <a href="index.html">Inicio</a>
-                <a href="pages/paisajes.html">Paisajes</a>
-                <a href="pages/retratos.html">Retratos</a>
+                <a href="../index.html">Inicio</a>
+                <a href="paisajes.html">Paisajes</a>
+                <a href="retratos.html">Retratos</a>
             </section>
         </header>
-        <section class="center-image">
-            <picture>
-                <source media="(min-width: 900px)" srcset="images/guatape.jpg">
-                <source media="(min-width: 320px)" srcset="images/guatape-320.jpeg">
-                <img src="images/guatape.jpg" alt="Foto de la represa de Guatapé.">
-            </picture>
-        </section>
-        <section class="two-images">
-            <div class="img-izq">
-                <a href="pages/paisajes.html">
+        <section class="container-retratos">
+                <section class="col-1">
                     <picture>
-                        <source media="(min-width: 900px)" srcset="images/medellin-metro.jpeg">
-                        <source media="(min-width: 320px)" srcset="images/medellin-metro.jpeg">
-                        <img src="images/medellin-metro.jpeg" id="img-izq" alt="Foto de Medellín y el Metro de la ciudad.">
+                        <source media="(min-width: 900px)" srcset="../images/paisaje.jpg">
+                        <source media="(min-width: 320px)" srcset="../images/paisaje.jpg">
+                        <img src="../images/paisaje.jpg" alt="Foto retrato de un bebe." class="blur-filter">
                     </picture>
-                </a>
-            </div>
-            <div class="img-der">
-                <a href="pages/retratos.html">
                     <picture>
-                        <source media="(min-width: 900px)" srcset="images/medellin-noche.jpeg">
-                        <source media="(min-width: 320px)" srcset="images/medellin-noche.jpeg">
-                        <img src="images/medellin-noche.jpeg" id="img-der" alt="Foto de Medellín en la noche">
+                        <source media="(min-width: 900px)" srcset="../images/paisaje.jpg">
+                        <source media="(min-width: 320px)" srcset="../images/paisaje.jpg">
+                        <img src="../images/paisaje.jpg" alt="Foto retrato de un bebe." class="grey-scale">
                     </picture>
-                </a>
-            </div>
-        </section>
+                    <picture>
+                        <source media="(min-width: 900px)" srcset="../images/paisaje.jpg">
+                        <source media="(min-width: 320px)" srcset="../images/paisaje.jpg">
+                        <img src="../images/paisaje.jpg" alt="Foto retrato de un bebe." class="sepia">
+                    </picture>
+                </section>
+                <section class="col-2">
+                    <picture>
+                        <source media="(min-width: 900px)" srcset="../images/paisaje.jpg">
+                        <source media="(min-width: 320px)" srcset="../images/paisaje.jpg">
+                        <img src="../images/paisaje.jpg" alt="Foto retrato de un bebe." class="grey-scale">
+                    </picture>
+                    <picture>
+                        <source media="(min-width: 900px)" srcset="../images/paisaje.jpg">
+                        <source media="(min-width: 320px)" srcset="../images/paisaje.jpg">
+                        <img src="../images/paisaje.jpg" alt="Foto retrato de un bebe.">
+                    </picture>
+                    <picture>
+                        <source media="(min-width: 900px)" srcset="../images/paisaje.jpg">
+                        <source media="(min-width: 320px)" srcset="../images/paisaje.jpg">
+                        <img src="../images/paisaje.jpg" alt="Foto retrato de un bebe." class="grey-scale">
+                    </picture>
+                </section>
+            </section>
         <footer>
             <div class="direccion">
                 <span class="titulo">Contacto</span>

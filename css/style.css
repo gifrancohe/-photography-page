@@ -87,6 +87,7 @@ footer {
     font-family: 'Dancing Script', cursive;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
+    padding: 20px;
 }
 
 footer div {
@@ -94,9 +95,77 @@ footer div {
     flex: 1;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 15px;
+}
+
+footer span.titulo {
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+footer div.derechos div {
+    display: flex;
+    flex-direction: row;
+}
+
+footer div.derechos div > span {
+    padding-right: 5px;
+}
+
+.container-retratos {
+    background-color: #d5c75f;
+}
+
+.col-1 {
+    display: flex;
+}
+
+.col-1 > picture > img {
+    flex: 1;
+    padding: 20px;
+    width: 88%;
+    box-shadow: none;
+}
+
+.col-2 {
+    display: flex;
+}
+
+.col-2 > picture > img {
+    flex: 1;
+    padding: 20px;
+    width: 88%;
+    box-shadow: none;
+}
+
+img.blur-filter {
+    filter: blur(10px);
+}
+
+img.grey-scale {
+    filter: grayscale(100%);
+}
+
+img.sepia {
+    filter: sepia(90%);
 }
 
 @media only screen and (min-width: 320px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    header section.title {
+        padding: 0px;
+    }
+    
+    header section.links {
+        padding: 0px;
+        margin-bottom: 20px;
+    }
+
     .contenido {
         width: 100%;
     }
@@ -111,9 +180,42 @@ footer div {
         display: flex;
         flex-direction: column;
     }
+
+    .col-1 {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .col-2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col-1 > picture {
+        display: flex;
+    }
+    
+    .col-2 > picture {
+        display: flex;
+    }
 }
 
 @media only screen and (min-width: 900px) {
+    header {
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+    
+    header section.title {
+        padding-left: 40px;
+    }
+    
+    header section.links {
+        padding-right: 40px;
+        margin-bottom: 0px;
+    }
+
     .contenido {
         width: 900px;
     }
@@ -128,4 +230,15 @@ footer div {
         display: flex;
         flex-direction: row;
     }
+
+    .col-1 {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .col-2 {
+        display: flex;
+        flex-direction: row;
+    }
+    
 }
